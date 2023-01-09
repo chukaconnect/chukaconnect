@@ -1,0 +1,26 @@
+.Fashionheader{
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    background-color:gold;  
+}
+.Arrivalsheader{
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    background-color:blueviolet;  
+}
+.seperatorheader{
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    background-color:black;
+    margin-top: 20px;  
+}
+.Drinksheader{
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    background-color:black;
+    color: white;   
+}

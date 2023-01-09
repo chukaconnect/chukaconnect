@@ -1,0 +1,35 @@
+.black{
+background-color:white;
+margin-left: 100px;
+border-radius: 10px;
+width: 80%;
+}
+.Condition h1{
+    margin-left:370px ;
+    color: black;
+}
+.content1{
+    margin-top: 10px;
+    margin-left: 150px;
+    margin-bottom: 20px;
+}
+.content1 p{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.content1 h2{
+    color: rgb(241, 145, 145);
+}
+.content1 h3{
+    color: gray;
+}
+@media (max-width: 768px){
+    .black{
+        margin-left: -140px;
+        width: 130%;
+    }
+    .Condition h1{
+        font-size: 25px;
+        margin-left: 190px;
+    }
+}

@@ -1,0 +1,62 @@
+.Register{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .RegisterForm{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .RegisterForm input,.RegisterForm button{
+   margin: 10px;
+   width: 400px;
+   height: 50px;
+   font-size: 20px;
+  }
+  .RegisterForm button{
+    border-radius: 2px;
+    font-weight: 700;
+  }
+  .RegisterForm input{
+    border:1px solid black;
+    border-radius: 5px;
+    padding-left: 10px;
+    color: rgb(45, 44, 44);
+    font-size: 13px;
+  }
+  .Register h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: purple;
+  }
+  
+  .RegisterForm button:hover{
+  cursor: pointer;
+  background-color: gray;
+   }
+   label{
+    color: rgb(12, 12, 12);
+    font-weight: bold;
+   }
+   @media (max-width: 768px){
+    .Register h1{
+      font-size: 20px;
+    }
+    .Register input{
+      margin-left: 50px;
+      width: 250px;
+    }
+    .Register label{
+      font-size: 13px;
+      margin-left: 50px;
+    }
+    .Register button{
+      width: 300px;
+      background-color: orange;
+    }
+    .RegisterForm button:hover{
+      cursor: pointer;
+      background-color: orange;
+       }
+   }

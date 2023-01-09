@@ -1,0 +1,81 @@
+
+  .flash .product {
+    background: #fff;
+    padding: 20px;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 96%;
+    width: 80%;
+  
+  }
+  .flash .product .img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  height: 60%;
+  width: 100%;
+  
+  }
+  .flash .product .img img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+  }
+  .flash .product .product-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+    width: 100%;
+    background: #f8f8f8;
+    border-radius: 0 0 10px 10px;
+  }
+  .flash .product h3 {
+      margin: 10px 0;
+      font-size: 15px;
+      text-align: center;
+      color: black;
+  }
+  .flash .product .product-details .price{
+     display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px 0;
+  }
+  .flash .product .product-details .price h4{
+    font-size: 16px;
+      font-weight: 600;
+      color: #333;
+      margin: 0;
+  }
+  @media (max-width: 768px){
+    .slick-slider {
+      width: 100%;
+      margin-left: 10px;
+    }
+    .arrivalls .box {
+      width: calc(50% - 10px);
+      
+    }
+    .arrivalls .product-details{
+      display: flex; /* use flexbox to align the product name and price horizontally */
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .arrivalls h3{
+      margin-bottom: 10px;
+    }
+
+    .img img {
+      width: 100%;
+      height: 100%;
+    }
+  }

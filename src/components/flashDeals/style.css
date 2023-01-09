@@ -1,0 +1,100 @@
+.flash {
+    background: #eff2f6;
+    padding: 20px 0;
+    margin-left: -50px;
+   
+  }
+  .price button{
+    color: white;
+    background-color: black;
+    width: 50px;
+    font-size: 13px;
+  }
+  .flash .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 200px;
+    background: white;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+  .flash .product {
+    background: #fff;
+    padding: 20px;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 96%;
+    width: 80%;
+  
+  }
+  .flash .product .img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  height: 60%;
+  width: 100%;
+  
+  }
+  .flash .product .img img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+  }
+  .flash .product .product-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+    width: 100%;
+    background: #f8f8f8;
+    border-radius: 0 0 10px 10px;
+  }
+  .flash .product h3 {
+      margin: 10px 0;
+      font-size: 14px;
+      text-align: center;
+      color: black;
+  }
+  .flash .product .product-details .price{
+     display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px 0;
+  }
+  .flash .product .product-details .price h4{
+    font-size: 16px;
+      font-weight: 600;
+
+      margin: 0;
+  }
+  @media (max-width: 768px){
+    .flash {
+      margin-left: -700px;  
+    }
+    .flash h1{
+      margin-left:20px;
+      font-size: 20px;
+    }
+    .flash .fa-bolt{
+      margin-left: 660px;
+    }
+    .mtop{
+      width: fit-content;
+    }
+    .mtop img{
+      width: 150px;
+      height: 150px;
+     }
+  }

@@ -1,0 +1,49 @@
+.flash {
+    background: #f6f9fc;
+    padding: 50px 0;
+  }
+  .scroll{
+    background-color: black;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    color: rgb(18, 18, 18);
+  }
+  .scroll h1{
+    color: white;
+    margin-left: 290px;
+  }
+  @media (max-width: 768px){
+    .wee{
+      padding: 5px 0;
+    }
+    .scroll h1{
+      margin-left: 715px;
+      font-size: 13px;
+    }
+    @keyframes color-change {
+      0% {
+        background-color: #333;
+      }
+      25% {
+        background-color:#00b8d4;
+      }
+      50% {
+        background-color:#00d9e9;
+      }
+      75% {
+        background-color: #999;
+      }
+      100% {
+        background-color: #bbb;
+      }
+    }
+    
+    .scroll {
+      animation: color-change 2s linear 2s infinite;
+    }
+  .ree h1{
+      margin-left: 630px;
+    }
+  }
+  
+ 

@@ -1,0 +1,21 @@
+.loading-page{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #fafafa;
+    z-index: 1000;
+ 
+}
+.app-logo{
+    width: 128px;
+    height: 128px;
+    border: 50%;
+    object-fit: cover;
+}

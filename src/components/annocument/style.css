@@ -1,0 +1,43 @@
+.img1 {
+    background-size: cover;
+    opacity: 400;
+    background-image: url(./Images/drinks.jpg);
+    border-radius: 10px;
+}
+.img2 {
+    background-size: cover;
+    opacity: 400;
+    background-image: url(./Images/fashion.jpg);
+    border-radius: 10px;
+}
+
+.bt{
+    width: 150px;
+    margin-left: 50px;
+    background-color: black;
+    color: white;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.img1 button{
+    margin-left: 110px;
+    margin-top: 250px;
+}
+.img2 button{
+    margin-left: 50px;
+    margin-top: 250px;
+}
+@media (max-width: 768px){
+   .annocument{
+    margin-left: -90px;
+    margin-top: -20px;
+    background-color: whitesmoke;
+    
+   }
+   .bt{
+   display: none;
+   }
+}

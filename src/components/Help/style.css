@@ -1,0 +1,19 @@
+.buy1{
+    margin-left: 350px;
+}
+.content2{
+    width: 80%;
+}
+.buy1 h1{
+    color: rgb(87, 86, 86);
+    font-size: 18px;
+}
+
+@media (max-width: 768px){
+    .buy{
+        margin-left: -350px;
+    }
+    .content2{
+        width: 100%;
+    }
+}
