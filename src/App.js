@@ -14,7 +14,6 @@ import Kata from "./components/Kata"
 import Cart from "./common/Cart/Cart"
 import Footer from "./common/footer/Footer"
 import Sdata from "./components/shops/Sdata"
-import Ndata from "./components/newarrivals/Ndata"
 import Master from "./components/Master/Master"
 import Combined from './components/Terms and Condition/Combined'
 import Help from './components/Help/Help'
@@ -29,7 +28,6 @@ import Electronicsitems from "./components/electronicsitems/Electronicsitems"
 import Fashionitems from "./components/fashionitems/Fashionitems"
 import Kitchenwareitems from "./components/kitchenwareitems/Kitchenwareitems"
 import Snacksitems from "./components/snacksitem/Snacksitems"
-import Newarrivalsitems from "./components/newarrivals/newarrivalsitems/Newarrivalsitems"
 import Allitems from "./components/shops/allitems/Allitems"
 import Fashioncat from "./components/fashioncat/Fashioncat"
 import Beddingscat from "./components/beddingscat/Beddingscat"
@@ -88,7 +86,7 @@ function App() {
       <Router>
         <Header CartItem={CartItem} productItems={productItems}/>
         <Routes>
-          <Route path='/' element={ <Pages productItems={productItems} addToCart={addToCart} Ndata={Ndata} shopItems={shopItems} fashionItems={fashionItems} drinksItems={drinksItems}/>} exact></Route>
+          <Route path='/' element={ <Pages productItems={productItems} addToCart={addToCart} shopItems={shopItems} fashionItems={fashionItems} drinksItems={drinksItems}/>} exact></Route>
           <Route path='/cart' element={  <Cart CartItem={CartItem} addToCart={addToCart} decreaseQty={decreaseQty} />} exact></Route>
           <Route path='/mastershop' element={ <Master productItems={productItems} fashionItems={fashionItems} electronicsItems={electronicsItems} drinksItems={drinksItems} snacksItems={snacksItems} beddingsItems={beddingsItems} kitchenwareItems={kitchenwareItems} beautyItems={beautyItems} addToCart={addToCart} shopItems={shopItems} />} exact></Route>
           <Route path='/Terms and condition' element={<Combined />} exact />
@@ -104,7 +102,6 @@ function App() {
           <Route path = '/fashionitems/:id' element={<Fashionitems fashionItems={fashionItems} addToCart={addToCart}/>} exact />
           <Route path = '/kitchenwareitems/:id' element={<Kitchenwareitems kitchenwareItems={kitchenwareItems} addToCart={addToCart}/>} exact />
           <Route path = '/snacksitems/:id' element={<Snacksitems snacksItems={snacksItems} addToCart={addToCart}/>} exact />
-          <Route path = '/newarrivalsitems/:id' element={<Newarrivalsitems Ndata={Ndata} addToCart={addToCart}/>} exact />
           <Route path = '/allitems/:id' element={<Allitems shopItems={shopItems} addToCart={addToCart}/>} exact />
           <Route path = '/fashioncat' element={<Fashioncat fashionItems={fashionItems} addToCart={addToCart}/>} exact /> 
           <Route path = '/beddingscat' element={<Beddingscat beddingsItems={beddingsItems} addToCart={addToCart}/>} exact /> 
