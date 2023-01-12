@@ -8,6 +8,7 @@
     align-items: center;
     margin-left: -440px;
     margin-top: -150px;
+    z-index: 1000;
   }
   
   .modalContainer {
