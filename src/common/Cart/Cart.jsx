@@ -74,7 +74,7 @@ const totalPrice = CartItem.reduce((price, item) => price + item.qty * item.pric
 {/*cart summary */}
   <div className='cart-total product'>
      <h2>Cart Summary</h2>
-     <p>Delivery fee included in the total checkout</p>
+     <p>Free delivery</p>
             <div className="checkout-btn">
           <button type="submit" onClick={goCheck}>Checkout (Ksh {totalPrice})</button>
         </div>
