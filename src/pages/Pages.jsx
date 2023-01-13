@@ -1,4 +1,5 @@
 import React, {useEffect} from "react"
+import {Helmet} from 'react-helmet'
 import Home from "../components/MainPage/Home"
 import FlashDeals from "../components/flashDeals/FlashDeals"
 import Annocument from "../components/annocument/Annocument"
@@ -59,6 +60,13 @@ const Pages = ({ productItems,addToCart,CartItem,drinksItems,fashionItems }) => 
       </div>
       <Annocument />
       <Wrapper />
+      <Helmet>
+  <title>Chuka connect</title>
+  <meta name="description"
+  content="An online sales platform where you can shop around chuka university.We are your certified online store" />
+  <meta name="keywords" content="Chuka, connect, flash deals" />
+  <link rel="canonical" href="https://chukaconnect.com/"/>
+</Helmet>
     </>
   )
 }
