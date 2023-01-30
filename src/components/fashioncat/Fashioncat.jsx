@@ -3,11 +3,21 @@ import './cat.css'
 import Sliding from './Sliding'
 import Fashionsub1 from './Fashionsub1'
 import Fashionsub2 from './Fashionsub2'
-
+import {useNavigate} from 'react-router-dom'
 import Fashionsub4 from './Fashionsub4'
 import Wrapper from '../wrapper/Wrapper'
 
 const Fashioncat = ({fashionItems}) => {
+  const navigate = useNavigate();
+  const viewallsub1=() =>{
+    navigate('/fashionallsub1')
+   }
+   const viewallsub2=() =>{
+    navigate('/fashionallsub3')
+   }
+  const viewallsub3=() =>{
+   navigate('/fashionallsub3')
+  }
   return (
    <>
     <section className='fashioncat fab'>
@@ -17,6 +27,7 @@ const Fashioncat = ({fashionItems}) => {
       <div className='Formen'>
         <div className='Formenhead'>
           <h1>For Men</h1>
+          <button onClick={viewallsub1} className="viewall-btn">View all</button>
         </div>
         <Fashionsub1 fashionItems={fashionItems} />
       </div>
@@ -24,6 +35,7 @@ const Fashioncat = ({fashionItems}) => {
       <div className='Forwomen'>
         <div className='Forwomenhead'>
           <h1>For Women</h1>
+          <button onClick={viewallsub2} className="viewall-btn">View all</button>
         </div>
         <Fashionsub2 fashionItems={fashionItems} />
       </div>
@@ -31,6 +43,7 @@ const Fashioncat = ({fashionItems}) => {
       <div className='Clothes'>
         <div className='Clotheshead'>
           <h1>Cloth line</h1>
+          <button onClick={viewallsub3} className="viewall-btn">View all</button>
         </div>
         <Fashionsub4 fashionItems={fashionItems} />
       </div>

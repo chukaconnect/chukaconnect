@@ -1,0 +1,51 @@
+.beddings-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:white;
+  }
+  .beddings-item {
+    width: 20%;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #ccc;
+    overflow: hidden; 
+    text-align: center; 
+    height: auto;
+    
+  }
+  .beddings-item img {
+    width: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    height: auto;
+    margin-top: -30px;
+    background: #f8f8f8;
+  }
+  .beddings-container .product-details{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: #f1f1f1;
+    margin-top: 20px;
+    
+  }
+  .beddings-container .product-details h3{
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+    width: 100%;
+    text-align: center;
+  }
+  .beddings-container .product-details .price{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    
+  }
+  
+ 
+  

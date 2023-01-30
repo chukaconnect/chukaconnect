@@ -1,0 +1,108 @@
+.beddings-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:white;
+  }
+  .beddings-item {
+    width: 20%;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #ccc;
+    overflow: hidden; 
+    text-align: center; 
+    height: auto;
+    
+  }
+  .beddings-item img {
+    width: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    height: auto;
+    margin-top: -30px;
+    background: #f8f8f8;
+  }
+  .beddings-container .product-details{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: #f1f1f1;
+    margin-top: 20px;
+    
+  }
+  .beddings-container .product-details h3{
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+    width: 100%;
+    text-align: center;
+  }
+  .beddings-container .product-details .price{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    
+  }
+
+  @media only screen and (max-width: 768px) {
+    .beddings-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+    .beddings-item {
+      width: 100%;
+      margin-bottom: 20px;
+      margin: -10px;
+      height: 300px;
+    }
+    .left {
+      /* styles for the left item */
+      width: calc(50% - 10px);
+      margin-top: 30px; /* adjust as needed */
+      margin-bottom:50px;
+      margin-right: -1px; /* adjust as needed */
+    }
+    .right {
+      /* styles for the right item */
+      width: calc(50% - 10px); /* adjust as needed */
+      margin-top: 30px;
+      margin-bottom: 50px;
+      margin-left: 15px; /* adjust as needed */
+    }
+    .beddings-container .product-details{
+      width:250px;
+      height: 200px;
+      margin-top: 20px;
+      position: sticky;
+    }
+  .beddings-container .product-details h3{
+font-size: 13px;
+margin-top: -150px;
+margin-left: -60px;
+position: absolute;
+    }
+    .beddings-container .product-details .price{
+      margin-top: -90px;
+      margin-left: -60px;
+      font-size: 10px;
+      color: rgb(12, 110, 12);
+      position: absolute;
+    }
+    .beddings-item img{
+      transform: scale(0.7);
+      margin-left: -70px;
+      max-height: 200px;
+      margin-top: -40px;
+    }
+ 
+  
+  }
+  
+  
+ 
+  

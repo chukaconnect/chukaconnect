@@ -36,6 +36,18 @@ import Electroniccat from "./components/electroniccat/Electroniccat"
 import Kitchenwarecat from "./components/kitchenwarecat/Kitchenwarecat"
 import Snackscat from "./components/snackscat/Snackscat"
 import Healthcat from "./components/healthcat/Healthcat"
+import Beddingsallsub1 from "./components/beddingsall/beddingsallsub1/Beddingsallsub1"
+import Beddingsallsub2 from "./components/beddingsall/beddingsallsub1/beddingsallsub2/Beddingsallsub2"
+import Beddingsallsub3 from "./components/beddingsall/beddingsallsub1/beddingsallsub3/Beddingsallsub3"
+import Drinksallsub1 from "./components/drinksall/drinksallsub1/Drinksallsub1"
+import Electronicsallsub1 from "./components/electronicsall/electronicsallsub1/Electronicsallsub1"
+import Electronicsallsub2 from "./components/electronicsall/electronicsallsub2/Electronicsallsub2"
+import Fashionallsub1 from "./components/fashionall/fashionallsub1/Fashionallsub1"
+import Fashionallsub2 from "./components/fashionall/fashionallsub2/Fashionallsub2"
+import Fashionallsub3 from "./components/fashionall/fashionallsub3/Fashionallsub3"
+import Kitchenallsub1 from "./components/kitchenall/kitchenallsub1/Kitchenallsub1"
+import Kitchenallsub2 from "./components/kitchenall/kitchenallsub2/Kitchenallsub2"
+import Snacksallsub1 from "./components/snacksall/snacksallsub1/Snacksallsub1"
 
 
 function App() {
@@ -110,6 +122,18 @@ function App() {
           <Route path = '/kitchenwarecat' element={<Kitchenwarecat kitchenwareItems={kitchenwareItems} addToCart={addToCart}/>} exact /> 
           <Route path = '/snackscat' element={<Snackscat snacksItems={snacksItems} addToCart={addToCart}/>} exact />  
           <Route path = '/healthcat' element={<Healthcat beautyItems={beautyItems} addToCart={addToCart}/>} exact /> 
+          <Route path='/beddingsallsub1' element={<Beddingsallsub1 beddingsItems={beddingsItems}/>} exact />
+          <Route path='/beddingsallsub2' element={<Beddingsallsub2 beddingsItems={beddingsItems}/>} exact />
+          <Route path='/beddingsallsub3' element={<Beddingsallsub3 beddingsItems={beddingsItems}/>} exact />
+          <Route path='/drinksallsub1' element={<Drinksallsub1 drinksItems={drinksItems} />} exact />
+          <Route path='/electronicsallsub1' element={<Electronicsallsub1 electronicsItems={electronicsItems} />} exact />
+          <Route path='/electronicsallsub2' element={<Electronicsallsub2 electronicsItems={electronicsItems} />} exact />
+          <Route path='/fashionallsub1' element={<Fashionallsub1 fashionItems={fashionItems} />} exact />
+          <Route path='/fashionallsub2' element={<Fashionallsub2 fashionItems={fashionItems} />} exact />
+          <Route path='/fashionallsub3' element={<Fashionallsub3 fashionItems={fashionItems} />} exact />
+          <Route path='/kitchenallsub1' element={<Kitchenallsub1 kitchenwareItems={kitchenwareItems} />} exact />
+          <Route path='/kitchenallsub3' element={<Kitchenallsub2 kitchenwareItems={kitchenwareItems} />} exact />
+          <Route path='/snacksallsub1' element={<Snacksallsub1 snacksItems={snacksItems} />} exact />
         </Routes>
         <Footer />
       </Router>
