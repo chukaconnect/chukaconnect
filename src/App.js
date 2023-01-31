@@ -54,7 +54,7 @@ import Snacksallsub1 from "./components/snacksall/snacksallsub1/Snacksallsub1"
 function App() {
  
   useEffect(() =>{
-    ReactGA.initialize('G-73JJR70TYM')
+    ReactGA.initialize('UA-196769985-1')
 //to report page view
     ReactGA.pageview(window.location.pathname)
   })
