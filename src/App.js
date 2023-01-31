@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import "./App.css"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import ReactGA from "react-ga";
@@ -50,9 +50,15 @@ import Kitchenallsub1 from "./components/kitchenall/kitchenallsub1/Kitchenallsub
 import Kitchenallsub2 from "./components/kitchenall/kitchenallsub2/Kitchenallsub2"
 import Snacksallsub1 from "./components/snacksall/snacksallsub1/Snacksallsub1"
 
-const TRACKING_ID = "G-73JJR70TYM";
-ReactGA.initialize(TRACKING_ID);
+
 function App() {
+ 
+  useEffect(() =>{
+    ReactGA.initialize('G-73JJR70TYM')
+//to report page view
+    ReactGA.pageview(window.location.pathname)
+  })
+
 
   const { productItems } = Data
   const { shopItems } = Sdata
