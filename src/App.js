@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import "./App.css"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import ReactGA from "react-ga";
 import Header from "./common/header/Header"
 import Pages from "./pages/Pages"
 import Data from "./components/Data"
@@ -49,7 +50,8 @@ import Kitchenallsub1 from "./components/kitchenall/kitchenallsub1/Kitchenallsub
 import Kitchenallsub2 from "./components/kitchenall/kitchenallsub2/Kitchenallsub2"
 import Snacksallsub1 from "./components/snacksall/snacksallsub1/Snacksallsub1"
 
-
+const TRACKING_ID = "G-73JJR70TYM";
+ReactGA.initialize(TRACKING_ID);
 function App() {
 
   const { productItems } = Data
