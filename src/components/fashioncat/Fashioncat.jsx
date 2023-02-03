@@ -13,7 +13,7 @@ const Fashioncat = ({fashionItems}) => {
     navigate('/fashionallsub1')
    }
    const viewallsub2=() =>{
-    navigate('/fashionallsub3')
+    navigate('/fashionallsub2')
    }
   const viewallsub3=() =>{
    navigate('/fashionallsub3')

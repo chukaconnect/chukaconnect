@@ -45,7 +45,7 @@ const Fashionsub4 = ({ fashionItems}) => {
   return (
     <>
     <Slider {...settings}>
-      {fashionItems.map((fashionItems) => {
+      {fashionItems.slice(6,12).map((fashionItems) => {
         return (
           <div className='box' key={fashionItems.id} 
           onClick={()=> handleItemClick(fashionItems.id)}>

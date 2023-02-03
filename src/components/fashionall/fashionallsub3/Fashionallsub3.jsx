@@ -13,7 +13,7 @@ const Fashionallsub3 = ({ fashionItems}) => {
 
   return (
     <div className='beddings-container'>
-        {fashionItems.map((fashionItems, index) => {
+        {fashionItems.slice(6,12).map((fashionItems, index) => {
           return (
             <div className={`beddings-item ${index % 2 === 0 ? 'left' : 'right'}`}  key={fashionItems.id} 
             onClick={()=> handleItemClick(fashionItems.id)}>
