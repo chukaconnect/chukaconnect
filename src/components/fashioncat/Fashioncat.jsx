@@ -42,7 +42,7 @@ const Fashioncat = ({fashionItems}) => {
 
       <div className='Clothes'>
         <div className='Clotheshead'>
-          <h1>Cloth line</h1>
+          <h1>All about shoes</h1>
           <button onClick={viewallsub3} className="viewall-btn">View all</button>
         </div>
         <Fashionsub4 fashionItems={fashionItems} />
