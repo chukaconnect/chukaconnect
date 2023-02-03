@@ -42,6 +42,7 @@ const Arrivals = ({ productItems}) => {
  
   const handleItemClick =(id)=> {
     navigate(`/items/${id}`);
+    window.scrollTo(0, 0);
   }
  
   return (

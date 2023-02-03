@@ -40,6 +40,7 @@ const Beddingssub1 = ({ beddingsItems}) => {
  
   const handleItemClick =(id)=> {
     navigate(`/beddingsitems/${id}`);
+    window.scrollTo(0, 0);
   }
 
   return (

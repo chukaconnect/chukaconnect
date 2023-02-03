@@ -40,6 +40,7 @@ const Electronicsub1 = ({electronicsItems}) => {
  
   const handleItemClick =(id)=> {
     navigate(`/electronicsitems/${id}`);
+    window.scrollTo(0, 0);
   }
 
   return (
