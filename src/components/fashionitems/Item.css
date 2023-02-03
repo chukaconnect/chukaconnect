@@ -20,8 +20,8 @@
 }
 
 .image-display-cover {
-  width: 50%;
-  max-width: 600px;
+  width: 100%;
+  max-width: 900px;
 }
 
 .image-display-cover img {
