@@ -3,6 +3,7 @@ import { useParams,useNavigate} from 'react-router-dom'
 import './Item.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShareSquare } from '@fortawesome/free-solid-svg-icons';
+import Header from '../../common/header/Header';
 
 const Kitchenwareitems = (props) => {
   function shareLocation (){
@@ -22,13 +23,15 @@ const Kitchenwareitems = (props) => {
   }
   const {id} = useParams();
   const kitchenwareItems = props.kitchenwareItems.find((kitchenwareItems) => kitchenwareItems.id === id)
+  const { CartItem, productItems } = props;
 
   if(!kitchenwareItems) {
-    return <div>Product not found</div>
+    return <><Header CartItem={CartItem} productItems={productItems}/><div>Product not found</div></>
   }
   
   return (
     <>
+    <Header CartItem={CartItem} productItems={productItems}/>
     <div key={kitchenwareItems.id} className="wrap-cover">
       <div className='display-cover'>
         <div className='image-display-cover'>

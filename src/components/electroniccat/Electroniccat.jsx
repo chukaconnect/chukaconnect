@@ -3,12 +3,13 @@ import './cat.css'
 import Sliding from './Sliding'
 import Electronicsub1 from './Electronicsub1'
 import Electronicsub2 from './Electronicsub2'
+import Header from '../../common/header/Header'
 import {useNavigate} from 'react-router-dom'
 
 
 import Wrapper from '../wrapper/Wrapper'
 
-const Electroniccat = ({electronicsItems}) => {
+const Electroniccat = ({electronicsItems,CartItem,productItems}) => {
   const navigate = useNavigate();
   const electronicsallsub1=() =>{
     navigate('/electronicsallsub1')
@@ -18,6 +19,7 @@ const Electroniccat = ({electronicsItems}) => {
    }
   return (
    <>
+   <Header CartItem={CartItem} productItems={productItems}/>
     <section className='fashioncat fab'>
       <div className='fashioncat-ad fab'>
         <Sliding />

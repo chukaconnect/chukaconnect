@@ -6,12 +6,13 @@ import Snacks from "./Snacks"
 import Beddings from "./Beddings"
 import Kitchenware from "./Kitchenware"
 import Scroll from "./Scroll"
+import Header from "../../common/header/Header"
 import "./style.css"
 
-const Master = ({ fashionItems,electronicsItems,drinksItems,snacksItems,beddingsItems,kitchenwareItems,beautyItems,addToCart }) => {
+const Master = ({ productItems,CartItem,fashionItems,electronicsItems,drinksItems,snacksItems,beddingsItems,kitchenwareItems,beautyItems,addToCart }) => {
   return (
     <>
-    
+    <Header CartItem={CartItem} productItems={productItems}/>
       <section className='flash wee'>
       <Scroll/>
         <div className='container'>

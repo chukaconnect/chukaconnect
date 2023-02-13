@@ -3,6 +3,7 @@ import { useParams,useNavigate} from 'react-router-dom'
 import './Item.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShareSquare } from '@fortawesome/free-solid-svg-icons';
+import Header from '../../common/header/Header';
 
 const Fashionitems = (props) => {
 
@@ -23,13 +24,15 @@ const Fashionitems = (props) => {
   }
   const {id} = useParams();
   const fashionItems = props.fashionItems.find((fashionItems) => fashionItems.id === id)
+  const { CartItem, productItems } = props;
 
   if(!fashionItems) {
-    return <div>Product not found</div>
+    return <><Header CartItem={CartItem} productItems={productItems}/><div>Product not found</div></>
   }
   
   return (
     <>
+    <Header CartItem={CartItem} productItems={productItems}/>
     <div key={fashionItems.id} className="wrap-cover">
       <div className='display-cover'>
         <div className='image-display-cover'>

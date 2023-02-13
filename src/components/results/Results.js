@@ -2,13 +2,14 @@
 import React from 'react'
 import { useLocation} from 'react-router-dom';
 import './Results.css'
+import Header from '../../common/header/Header';
 
-const Results = ({addToCart}) => {
+const Results = ({addToCart,CartItem,productItems}) => {
   const location = useLocation()
   const matchingItems = location.state.matchingItems;
   return (
     <>
-     
+     <Header CartItem={CartItem} productItems={productItems}/>  
 {matchingItems.map(productItems => (
     
  <div className='results-container'>

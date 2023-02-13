@@ -1,8 +1,9 @@
 import React from "react"
 import {useNavigate} from 'react-router-dom'
 import './all.css'
+import Header from "../../../common/header/Header"
 
-const Kitchenallsub2 = ({ kitchenwareItems}) => {
+const Kitchenallsub2 = ({ kitchenwareItems,CartItem,productItems}) => {
 
   const navigate = useNavigate();
  
@@ -12,6 +13,8 @@ const Kitchenallsub2 = ({ kitchenwareItems}) => {
   }
 
   return (
+    <>
+    <Header CartItem={CartItem} productItems={productItems}/>
     <div className='beddings-container'>
         {kitchenwareItems.slice(6,13).map((kitchenwareItems, index) => {
           return (
@@ -34,6 +37,7 @@ const Kitchenallsub2 = ({ kitchenwareItems}) => {
           )
         })}
     </div>
+    </>
   )
 }
 

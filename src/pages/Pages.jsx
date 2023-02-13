@@ -1,5 +1,6 @@
 import React, {useEffect} from "react"
 import {Helmet} from 'react-helmet'
+import Header from "../common/header/Header"
 import Home from "../components/MainPage/Home"
 import FlashDeals from "../components/flashDeals/FlashDeals"
 import Annocument from "../components/annocument/Annocument"
@@ -33,6 +34,7 @@ const Pages = ({ productItems,addToCart,CartItem,drinksItems,fashionItems }) => 
   }
   return (
     <>
+     <Header CartItem={CartItem} productItems={productItems}/>
       <Home CartItem={CartItem} />
       <FlashDeals productItems={productItems} addToCart={addToCart} />
       <div className="Forfashionlovers" >

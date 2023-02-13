@@ -2,18 +2,20 @@ import React from 'react'
 import './cat.css'
 import Sliding from './Sliding'
 import Snackssub2 from './Snackssub2'
+import Header from '../../common/header/Header'
 import {useNavigate} from 'react-router-dom'
 
 
 import Wrapper from '../wrapper/Wrapper'
 
-const Snackscat = ({snacksItems}) => {
+const Snackscat = ({snacksItems,productItems,CartItem}) => {
   const navigate = useNavigate();
   const viewallsub1=() =>{
     navigate('/snacksallsub1')
    }
   return (
    <>
+   <Header CartItem={CartItem} productItems={productItems}/>
     <section className='fashioncat fab'>
       <div className='fashioncat-ad fab'>
         <Sliding />

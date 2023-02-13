@@ -6,8 +6,9 @@ import Fashionsub2 from './Fashionsub2'
 import {useNavigate} from 'react-router-dom'
 import Fashionsub4 from './Fashionsub4'
 import Wrapper from '../wrapper/Wrapper'
+import Header from '../../common/header/Header'
 
-const Fashioncat = ({fashionItems}) => {
+const Fashioncat = ({fashionItems,CartItem,productItems}) => {
   const navigate = useNavigate();
   const viewallsub1=() =>{
     navigate('/fashionallsub1')
@@ -20,6 +21,7 @@ const Fashioncat = ({fashionItems}) => {
   }
   return (
    <>
+   <Header CartItem={CartItem} productItems={productItems}/>
     <section className='fashioncat fab'>
       <div className='fashioncat-ad fab'>
         <Sliding />

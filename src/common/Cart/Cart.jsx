@@ -1,9 +1,10 @@
 import React from "react"
 import "./style.css"
 import {useNavigate} from 'react-router-dom'
+import Header from "../header/Header"
 
 //const cart
-const Cart = ({ CartItem, addToCart, decreaseQty }) => {
+const Cart = ({ CartItem, addToCart, decreaseQty,productItems }) => {
 
  //declaring navigate
 const navigate = useNavigate()
@@ -27,6 +28,7 @@ const totalPrice = CartItem.reduce((price, item) => price + item.qty * item.pric
 
   return (
  <>
+ <Header CartItem={CartItem} productItems={productItems}/>
   <section className='cart-items'>
         <div className='container d_flex'>
           {/* display items when are added and no items message display when not*/}

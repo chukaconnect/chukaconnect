@@ -5,10 +5,10 @@ import Beddingssub1 from './Beddingssub1'
 import Beddingssub2 from './Beddingssub2'
 import Beddingssub3 from './Beddingssub3'
 import {useNavigate} from 'react-router-dom'
-
+import Header from '../../common/header/Header'
 import Wrapper from '../wrapper/Wrapper'
 
-const Beddingscat = ({beddingsItems}) => {
+const Beddingscat = ({beddingsItems,productItems,CartItem}) => {
   const navigate = useNavigate();
   const viewallsub1=() =>{
     navigate('/beddingsallsub1')
@@ -21,6 +21,7 @@ const Beddingscat = ({beddingsItems}) => {
    }
   return (
    <>
+   <Header CartItem={CartItem} productItems={productItems}/>
     <section className='fashioncat fab'>
       <div className='fashioncat-ad fab'>
         <Sliding />

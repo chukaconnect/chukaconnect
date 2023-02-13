@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import "./App.css"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import ReactGA from "react-ga";
-import Header from "./common/header/Header"
+
 import Pages from "./pages/Pages"
 import Data from "./components/Data"
 import Bata from "./components/Bata"
@@ -104,44 +104,44 @@ function App() {
   return (
     <>
       <Router>
-        <Header CartItem={CartItem} productItems={productItems}/>
+        
         <Routes>
-          <Route path='/' element={ <Pages productItems={productItems} addToCart={addToCart} shopItems={shopItems} fashionItems={fashionItems} drinksItems={drinksItems}/>} exact></Route>
-          <Route path='/cart' element={  <Cart CartItem={CartItem} addToCart={addToCart} decreaseQty={decreaseQty} />} exact></Route>
-          <Route path='/mastershop' element={ <Master productItems={productItems} fashionItems={fashionItems} electronicsItems={electronicsItems} drinksItems={drinksItems} snacksItems={snacksItems} beddingsItems={beddingsItems} kitchenwareItems={kitchenwareItems} beautyItems={beautyItems} addToCart={addToCart} shopItems={shopItems} />} exact></Route>
+          <Route path='/' element={ <Pages productItems={productItems} addToCart={addToCart} shopItems={shopItems} fashionItems={fashionItems} drinksItems={drinksItems} CartItem={CartItem}/>} exact></Route>
+          <Route path='/cart' element={  <Cart CartItem={CartItem} addToCart={addToCart} decreaseQty={decreaseQty} productItems={productItems}/>} exact></Route>
+          <Route path='/mastershop' element={ <Master CartItem={CartItem} productItems={productItems} fashionItems={fashionItems} electronicsItems={electronicsItems} drinksItems={drinksItems} snacksItems={snacksItems} beddingsItems={beddingsItems} kitchenwareItems={kitchenwareItems} beautyItems={beautyItems} addToCart={addToCart} shopItems={shopItems} />} exact></Route>
           <Route path='/Terms and condition' element={<Combined />} exact />
           <Route path='/help' element={<Help />} exact />
-          <Route path='/not-found' element={<ErrorMessage />} exact />
+          <Route path='/not-found' element={<ErrorMessage CartItem={CartItem} productItems={productItems} />} exact />
           <Route path='/cart/checkout' element={<Checkout CartItem={CartItem} />} exact />
-          <Route path='/search-results' element={<Results productItems={productItems} addToCart={addToCart}/>} exact />
-          <Route path = '/items/:id' element={<Items productItems={productItems} addToCart={addToCart}/>} exact />
+          <Route path='/search-results' element={<Results CartItem={CartItem} productItems={productItems} addToCart={addToCart}/>} exact />
+          <Route path = '/items/:id' element={<Items CartItem={CartItem} productItems={productItems} addToCart={addToCart}/>} exact />
           <Route path = '/beautyitems/:id' element={<Shopitems beautyItems={beautyItems} addToCart={addToCart}/>} exact />
-          <Route path = '/beddingsitems/:id' element={<Beddingsitems beddingsItems={beddingsItems} addToCart={addToCart}/>} exact /> 
-          <Route path = '/drinksitems/:id' element={<Drinksitems drinksItems={drinksItems} addToCart={addToCart}/>} exact />
-          <Route path = '/electronicsitems/:id' element={<Electronicsitems electronicsItems={electronicsItems} addToCart={addToCart}/>} exact />
-          <Route path = '/fashionitems/:id' element={<Fashionitems fashionItems={fashionItems} addToCart={addToCart}/>} exact />
-          <Route path = '/kitchenwareitems/:id' element={<Kitchenwareitems kitchenwareItems={kitchenwareItems} addToCart={addToCart}/>} exact />
-          <Route path = '/snacksitems/:id' element={<Snacksitems snacksItems={snacksItems} addToCart={addToCart}/>} exact />
+          <Route path = '/beddingsitems/:id' element={<Beddingsitems CartItem={CartItem} productItems={productItems} beddingsItems={beddingsItems} addToCart={addToCart}/>} exact /> 
+          <Route path = '/drinksitems/:id' element={<Drinksitems CartItem={CartItem} productItems={productItems} drinksItems={drinksItems} addToCart={addToCart}/>} exact />
+          <Route path = '/electronicsitems/:id' element={<Electronicsitems CartItem={CartItem} productItems={productItems} electronicsItems={electronicsItems} addToCart={addToCart}/>} exact />
+          <Route path = '/fashionitems/:id' element={<Fashionitems CartItem={CartItem} productItems={productItems} fashionItems={fashionItems} addToCart={addToCart}/>} exact />
+          <Route path = '/kitchenwareitems/:id' element={<Kitchenwareitems CartItem={CartItem} productItems={productItems} kitchenwareItems={kitchenwareItems} addToCart={addToCart}/>} exact />
+          <Route path = '/snacksitems/:id' element={<Snacksitems CartItem={CartItem} productItems={productItems} snacksItems={snacksItems} addToCart={addToCart}/>} exact />
           <Route path = '/allitems/:id' element={<Allitems shopItems={shopItems} addToCart={addToCart}/>} exact />
-          <Route path = '/fashioncat' element={<Fashioncat fashionItems={fashionItems} addToCart={addToCart}/>} exact /> 
-          <Route path = '/beddingscat' element={<Beddingscat beddingsItems={beddingsItems} addToCart={addToCart}/>} exact /> 
-          <Route path = '/drinkscat' element={<Drinkscat drinksItems={drinksItems} addToCart={addToCart}/>} exact /> 
-          <Route path = '/electroniccat' element={<Electroniccat electronicsItems={electronicsItems} addToCart={addToCart}/>} exact /> 
-          <Route path = '/kitchenwarecat' element={<Kitchenwarecat kitchenwareItems={kitchenwareItems} addToCart={addToCart}/>} exact /> 
-          <Route path = '/snackscat' element={<Snackscat snacksItems={snacksItems} addToCart={addToCart}/>} exact />  
+          <Route path = '/fashioncat' element={<Fashioncat CartItem={CartItem} productItems={productItems} fashionItems={fashionItems} addToCart={addToCart}/>} exact /> 
+          <Route path = '/beddingscat' element={<Beddingscat CartItem={CartItem} productItems={productItems} beddingsItems={beddingsItems} addToCart={addToCart}/>} exact /> 
+          <Route path = '/drinkscat' element={<Drinkscat CartItem={CartItem} productItems={productItems} drinksItems={drinksItems} addToCart={addToCart}/>} exact /> 
+          <Route path = '/electroniccat' element={<Electroniccat CartItem={CartItem} productItems={productItems} electronicsItems={electronicsItems} addToCart={addToCart}/>} exact /> 
+          <Route path = '/kitchenwarecat' element={<Kitchenwarecat CartItem={CartItem} productItems={productItems} kitchenwareItems={kitchenwareItems} addToCart={addToCart}/>} exact /> 
+          <Route path = '/snackscat' element={<Snackscat CartItem={CartItem} productItems={productItems} snacksItems={snacksItems} addToCart={addToCart}/>} exact />  
           <Route path = '/healthcat' element={<Healthcat beautyItems={beautyItems} addToCart={addToCart}/>} exact /> 
-          <Route path='/beddingsallsub1' element={<Beddingsallsub1 beddingsItems={beddingsItems}/>} exact />
-          <Route path='/beddingsallsub2' element={<Beddingsallsub2 beddingsItems={beddingsItems}/>} exact />
-          <Route path='/beddingsallsub3' element={<Beddingsallsub3 beddingsItems={beddingsItems}/>} exact />
-          <Route path='/drinksallsub1' element={<Drinksallsub1 drinksItems={drinksItems} />} exact />
-          <Route path='/electronicsallsub1' element={<Electronicsallsub1 electronicsItems={electronicsItems} />} exact />
-          <Route path='/electronicsallsub2' element={<Electronicsallsub2 electronicsItems={electronicsItems} />} exact />
-          <Route path='/fashionallsub1' element={<Fashionallsub1 fashionItems={fashionItems} />} exact />
-          <Route path='/fashionallsub2' element={<Fashionallsub2 fashionItems={fashionItems} />} exact />
-          <Route path='/fashionallsub3' element={<Fashionallsub3 fashionItems={fashionItems} />} exact />
-          <Route path='/kitchenallsub1' element={<Kitchenallsub1 kitchenwareItems={kitchenwareItems} />} exact />
-          <Route path='/kitchenallsub3' element={<Kitchenallsub2 kitchenwareItems={kitchenwareItems} />} exact />
-          <Route path='/snacksallsub1' element={<Snacksallsub1 snacksItems={snacksItems} />} exact />
+          <Route path='/beddingsallsub1' element={<Beddingsallsub1 CartItem={CartItem} productItems={productItems} beddingsItems={beddingsItems}/>} exact />
+          <Route path='/beddingsallsub2' element={<Beddingsallsub2 CartItem={CartItem} productItems={productItems} beddingsItems={beddingsItems}/>} exact />
+          <Route path='/beddingsallsub3' element={<Beddingsallsub3 CartItem={CartItem} productItems={productItems} beddingsItems={beddingsItems}/>} exact />
+          <Route path='/drinksallsub1' element={<Drinksallsub1 CartItem={CartItem} productItems={productItems} drinksItems={drinksItems} />} exact />
+          <Route path='/electronicsallsub1' element={<Electronicsallsub1 CartItem={CartItem} productItems={productItems} electronicsItems={electronicsItems} />} exact />
+          <Route path='/electronicsallsub2' element={<Electronicsallsub2 CartItem={CartItem} productItems={productItems} electronicsItems={electronicsItems} />} exact />
+          <Route path='/fashionallsub1' element={<Fashionallsub1 CartItem={CartItem} productItems={productItems} fashionItems={fashionItems} />} exact />
+          <Route path='/fashionallsub2' element={<Fashionallsub2 CartItem={CartItem} productItems={productItems} fashionItems={fashionItems} />} exact />
+          <Route path='/fashionallsub3' element={<Fashionallsub3 CartItem={CartItem} productItems={productItems} fashionItems={fashionItems} />} exact />
+          <Route path='/kitchenallsub1' element={<Kitchenallsub1 CartItem={CartItem} productItems={productItems} kitchenwareItems={kitchenwareItems} />} exact />
+          <Route path='/kitchenallsub3' element={<Kitchenallsub2 CartItem={CartItem} productItems={productItems} kitchenwareItems={kitchenwareItems} />} exact />
+          <Route path='/snacksallsub1' element={<Snacksallsub1 CartItem={CartItem} productItems={productItems} snacksItems={snacksItems} />} exact />
         </Routes>
         <Footer />
       </Router>

@@ -3,11 +3,12 @@ import './cat.css'
 import Sliding from './Sliding'
 import Kitchenwaresub1 from './Kitchenwaresub1'
 import Kitchenwaresub3 from './Kitchenwaresub3'
+import Header from '../../common/header/Header'
 import {useNavigate} from 'react-router-dom'
 
 import Wrapper from '../wrapper/Wrapper'
 
-const Kitchenwarecat = ({kitchenwareItems}) => {
+const Kitchenwarecat = ({kitchenwareItems,productItems,CartItem}) => {
   const navigate = useNavigate();
   const viewallsub1=() =>{
     navigate('/kitchenallsub1')
@@ -17,6 +18,7 @@ const Kitchenwarecat = ({kitchenwareItems}) => {
    }
   return (
    <>
+   <Header CartItem={CartItem} productItems={productItems}/>
     <section className='fashioncat fab'>
       <div className='fashioncat-ad fab'>
         <Sliding />
