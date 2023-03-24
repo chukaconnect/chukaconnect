@@ -1,18 +1,21 @@
-import React, {useEffect} from "react"
+import React, {useEffect,lazy, Suspense} from "react"
 import {Helmet} from 'react-helmet'
 import Header from "../common/header/Header"
 import Home from "../components/MainPage/Home"
-import FlashDeals from "../components/flashDeals/FlashDeals"
+//import FlashDeals from "../components/flashDeals/FlashDeals"
 import Annocument from "../components/annocument/Annocument"
 import Wrapper from "../components/wrapper/Wrapper"
-import Fashionsub4 from "../components/fashioncat/Fashionsub4"
-import Drinkssub1 from "../components/drinkscat/Drinkssub1"
-import Arrivals from "../components/toAdd/Arrivals"
+//import Fashionsub4 from "../components/fashioncat/Fashionsub4"
+//import Drinkssub1 from "../components/drinkscat/Drinkssub1"
+//import Arrivals from "../components/toAdd/Arrivals"
 import LoadingPage from "../common/loadingPage/LoadingPage"
 import './pages.css'
 import { useState } from "react"
 
-
+const LazyComponent = lazy(() => import('../components/flashDeals/FlashDeals'));
+const ArrivalComponent = lazy(() => import('../components/toAdd/Arrivals'));
+const Fashionsub4Component = lazy(() => import('../components/fashioncat/Fashionsub4'));
+const Drinkssub1Component = lazy(() => import('../components/drinkscat/Drinkssub1'));
 
 const Pages = ({ productItems,addToCart,CartItem,drinksItems,fashionItems }) => {
   const [isLoading,setIsLoading] = useState(true);
@@ -36,26 +39,34 @@ const Pages = ({ productItems,addToCart,CartItem,drinksItems,fashionItems }) => 
     <>
      <Header CartItem={CartItem} productItems={productItems}/>
       <Home CartItem={CartItem} />
-      <FlashDeals productItems={productItems} addToCart={addToCart} />
+      <Suspense fallback={<div className='spinner'></div>}>
+      <LazyComponent productItems={productItems} addToCart={addToCart} />
+      </Suspense>
       <div className="Forfashionlovers" >
         <div className="Arrivalsheader">
         <h2>New Arrivals</h2>
         </div>
-        <Arrivals productItems={productItems}/>
+        <Suspense fallback={<div className='spinner'></div>}>
+        <ArrivalComponent productItems={productItems}/>
+        </Suspense>
       </div>
 
       <div className="Forfashionlovers" >
         <div className="Fashionheader">
         <h2>For Fashion Lovers</h2>
         </div>
-        <Fashionsub4 fashionItems={fashionItems}/>
+        <Suspense fallback={<div className='spinner'></div>}>
+        <Fashionsub4Component fashionItems={fashionItems}/>
+        </Suspense>
       </div>
 
       <div className="Forfashionlovers" >
         <div className="Drinksheader">
         <h2>Get some drink</h2>
         </div>
-        <Drinkssub1 drinksItems={drinksItems}/>
+        <Suspense fallback={<div className='spinner'></div>}>
+        <Drinkssub1Component drinksItems={drinksItems}/>
+        </Suspense>
       </div>
 
       <div className="seperatorheader">
