@@ -1,7 +1,7 @@
 import React from "react"
 import {useNavigate} from 'react-router-dom'
 import './all.css'
-import Header from "../../../common/header/Header"
+import Header from "../../../../common/header/Header"
 
 const Beddingsallsub3 = ({ beddingsItems,CartItem,productItems}) => {
 
