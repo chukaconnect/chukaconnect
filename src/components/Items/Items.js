@@ -23,6 +23,7 @@ const Items = (props) => {
   }
   const {id} = useParams();
   const productItems = props.productItems.find((productItems) => productItems.id === id)
+  const { CartItem } = props;
 
   if(!productItems) {
     return <div>Product not found</div>
