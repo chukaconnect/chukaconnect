@@ -40,6 +40,9 @@ const handleChange = (event) =>{
   const goCart = () =>{
     navigate('/cart');
   };
+  const cTickets = () =>{
+    navigate('/home')
+  }
 
 
   return (
@@ -62,7 +65,7 @@ const handleChange = (event) =>{
 </div>
         
           <div className='icon f_flex width'>
-            <i className='fa fa-user icon-circle' ></i>
+            <i className='fa fa-user icon-circle' onClick={cTickets}></i>
             <div className='cart'>
               
                 <i className='fa fa-shopping-bag icon-circle' onClick={goCart}></i>
