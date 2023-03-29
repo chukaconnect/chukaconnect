@@ -1,0 +1,60 @@
+.steps{
+    margin-top: 100px;
+}
+.steps h1{
+    margin-left: 25%;
+    font-weight: bolder;
+    font-size: 35px;
+
+}
+.started {
+    border: 1px solid #ccc; /* add thin border outside */
+    padding: 30px;
+    border-radius: 5px;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .create-div,
+.set-div {
+  border: 1px solid #ccc; /* add thin border */
+  padding: 20px;
+  border-radius: 10px;
+  width: 180px;
+  height: 150px;
+  margin: 5px;
+  flex-direction: column;
+  display: flex; /* display inline so they are next to each other */
+  align-items: center; /* center content vertically */
+  cursor: pointer; /* add cursor pointer on hover */
+}
+
+.create-div:hover,
+.set-div:hover {
+    border-width: 1.5px;
+  border-color: green; /* change border color to green on hover */
+}
+
+.create-div p,
+.set-div p {
+ font-size: 0.8rem;
+ margin-top: 20px;
+ font-weight: 700;
+  margin-left: 5px; /* add margin between icon and text */
+}
+
+.create-div svg,
+.set-div svg {
+ color: green;
+  width: 40px; /* increase icon size */
+  height: 40px; /* increase icon size */
+  margin-right: 10px; /* add margin between icon and text */
+}
+
+.started h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

@@ -49,6 +49,11 @@ import Fashionallsub3 from "./components/fashionall/fashionallsub3/Fashionallsub
 import Kitchenallsub1 from "./components/kitchenall/kitchenallsub1/Kitchenallsub1"
 import Kitchenallsub2 from "./components/kitchenall/kitchenallsub2/Kitchenallsub2"
 import Snacksallsub1 from "./components/snacksall/snacksallsub1/Snacksallsub1"
+import Home from "./components/ctickets/home/Home"
+import Create from "./components/ctickets/create/Create"
+import Set from "./components/ctickets/set/Set"
+import Dashboard from "./components/ctickets/dashboard/Dashboard"
+import Sign from "./components/ctickets/sign/Sign"
 
 
 function App() {
@@ -142,6 +147,12 @@ function App() {
           <Route path='/kitchenallsub1' element={<Kitchenallsub1 CartItem={CartItem} productItems={productItems} kitchenwareItems={kitchenwareItems} />} exact />
           <Route path='/kitchenallsub3' element={<Kitchenallsub2 CartItem={CartItem} productItems={productItems} kitchenwareItems={kitchenwareItems} />} exact />
           <Route path='/snacksallsub1' element={<Snacksallsub1 CartItem={CartItem} productItems={productItems} snacksItems={snacksItems} />} exact />
+
+          <Route path='/home' element={<Home />} exact />
+          <Route path='/create' element={<Create />} exact />
+          <Route path='/setup' element={<Set />} exact />
+          <Route path='/dashboard' element={<Dashboard />} exact />
+          <Route path='/sign' element={<Sign />} exact />
         </Routes>
         <Footer />
       </Router>

@@ -1,0 +1,281 @@
+.event-header {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .event-header h1 {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    color: orange;
+   
+  }
+  
+  .event-header h3 {
+    font-size: 18px;
+    font-weight: bold;
+   
+    
+    
+   
+  }
+  
+  .event-name {
+    margin-top: 20px;
+    background-color: aliceblue;
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    background-image: url(../images/back.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .holder-desc{
+    background-color: rgba(155, 153, 153, 0.1);
+    border-radius: 5px;
+    width: 800px;
+    height: 200px;
+    color: white;
+    margin-left: 20%;
+    margin-top: -50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .holder-desc h{
+    margin-top: -150px;
+    font-size: 36px;
+    font-style: oblique;
+    font-weight: bold;
+  }
+  .holder-desc p{
+    margin-top: 40px;
+    margin-left: -50%;
+    color: whitesmoke;
+  }
+
+  .holder-desc p span{
+    color: red;
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 13px;
+  }
+  .dropdown {
+    position: relative;
+    width: 100px;
+    margin-left: 90%;
+    background-color: rgb(72, 68, 68);
+    border-radius: 5px;
+    color: whitesmoke;
+    margin-top: -40px;
+    padding: 5px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: 0px;
+    top: 100%;
+    right: 0;
+    padding: 10px;
+    z-index: 1;
+    border-radius: 5px;
+    width: 150%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  .dropdown-content h4 {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+  }
+
+  .dropdown-content h4:hover{
+    background-color: rgb(136, 136, 239);
+    border-radius: 5px;
+    color: rgb(44, 41, 41);
+
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .insights{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .insight-msg{
+margin-left: 30%;
+color: black;
+font-size: 36px;
+font-weight: 600;
+text-decoration: underline;
+  }
+  .insights h5{
+    font-size: 20px;
+  }
+
+  .rev{
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    height: 250px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .tick{
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    border-radius: 3px;
+    margin-top: 50px;
+    height: 250px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .canc{
+    background-color: rgba(0, 0, 0, 0.05);
+    margin-bottom: 50px;
+    margin-left: 20px;
+    border-radius: 3px;
+    margin-top: 50px;
+    padding: 20px;
+    height: 250px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .atten{
+    background-color: rgba(0, 0, 0, 0.05);
+    margin-left: 20px;
+    border-radius: 3px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    height: 250px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rev-img{
+    background-image: url(../images/rev.jpg);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+  }
+  .tick-img{
+    background-image: url(../images/tick.jpg);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+  }
+  .canc-img{
+    background-image: url(../images/canc.jpg);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+  }
+  .atten-img{
+    background-image: url(../images/atten.jpg);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+  }
+
+  .canc-curr{
+    border-radius: 2px;
+    background-color: rgba(128, 128, 128, 0.3);
+    margin-top: 5px;
+    padding: 10px;
+    width: 150px;
+  }
+  
+  .tick-curr{
+    border-radius: 2px;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.3);
+    margin-top: 5px;
+    width: 150px;
+  }
+  
+  .rev-curr{
+    border-radius: 2px;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.3);
+    margin-top: 5px;
+    width: 150px;
+  }
+  .atten-curr{
+    border-radius: 2px;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.3);
+    margin-top: 5px;
+    width: 150px;
+  }
+
+  .rev-t{
+    border-radius: 2px;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.1);
+    margin-top: 5px;
+    width: 150px;
+  }
+  .tick-t{
+    border-radius: 2px;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.1);
+    margin-top: 5px;
+    width: 150px;
+  }
+  .canc-t{
+    border-radius: 2px;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.1);
+    margin-top: 5px;
+    width: 150px;
+  }
+  .atten-t{
+    border-radius: 2px;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.1);
+    margin-top: 5px;
+    width: 150px;
+  }
+  
+ 
+  
+  

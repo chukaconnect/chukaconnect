@@ -1,0 +1,144 @@
+.sec-connect {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .div-connect{
+    background-color: rgb(223, 217, 217,0.4);
+    height: fit-content;
+    width: 100%;
+    margin-top: 50px;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .connect-banner{
+    background-color: white;
+    padding: 20px;
+    height: 70vh;
+    border-radius: 4px;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    background-image: url(../images/pic.jpg);
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .banner-theme{
+    margin-top: -200px;
+  }
+
+  .banner-theme h1 {
+    font-size: 85px;
+    color: whitesmoke;
+    overflow: hidden; /* hide overflow to prevent flickering */
+    white-space: nowrap; /* prevent line breaks */
+    animation: show-words 3s linear forwards; /* start the animation */
+  }
+  .banner-theme h2{
+    color: rgb(214, 214, 235);
+    font-size: 35px;
+    margin-left: 150px;
+  }
+  
+  @keyframes show-words {
+    0% {
+      width: 0; /* start with zero width */
+    }
+    33% {
+      width: 0; /* maintain zero width for the first third of the animation */
+    }
+    100% {
+      width: 100%; /* expand to full width at the end of the animation */
+    }
+  }
+  
+  .banner-theme h1 span {
+    display: inline-block; /* display each word as a separate block */
+    animation: word-delay 3s linear forwards infinite;
+  }
+  
+  .banner-theme h1 span:nth-child(1) {
+    animation-delay: 0.5s; /* delay display of first word by 0.5s */
+  }
+  
+  .banner-theme h1 span:nth-child(2) {
+    animation-delay: 1.5s; /* delay display of second word by 1.5s */
+  }
+  
+  .banner-theme h1 span:nth-child(3) {
+    animation-delay: 2.5s; /* delay display of third word by 2.5s */
+  }
+  
+  @keyframes word-delay {
+    0% {
+      opacity: 0; /* start with zero opacity */
+    }
+    33% {
+      opacity: 0; /* maintain zero opacity for the first third of the animation */
+    }
+    100% {
+      opacity: 1; /* fade in to full opacity at the end of the animation */
+    }
+  }
+
+  .banner-details{
+    width: 95%;
+    height: 190px;
+    border-radius: 3px;
+    margin-top: 160px;
+    margin-left: -430px;
+    background-color: rgba(211, 211, 211,0.5);
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+        
+  }
+
+  .tickects-sold{
+    width: fit-content;
+    height: 80px;
+    background-color: rgba(211, 211, 211,0.9);
+    border-radius: 4px;
+    padding: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .date-ticket{
+    width: fit-content;
+    height: 80px;
+    background-color: rgba(211, 211, 211,0.9);
+    border-radius: 4px;
+    margin-right: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .venue-ticket{
+    width: fit-content;
+    height: 80px;
+    background-color: rgba(211, 211, 211,0.9);
+    border-radius: 4px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .banner-details h1{
+    font-size: 15px;
+  }
+
+
+  
+  
