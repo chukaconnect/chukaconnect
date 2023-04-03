@@ -73,7 +73,7 @@ function Sign() {
   }
   function handleRegister() {
     if (isSignUp) {
-      Axios.post("https://phpmyadmin.freedb.tech/user/sign", {
+      Axios.post("https://chukaconnect.herokuapp.com/user/sign", {
         username: username,
         phone: phone,
         password: password
