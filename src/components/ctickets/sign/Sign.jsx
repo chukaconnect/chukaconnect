@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import Axios from 'axios';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft} from '@fortawesome/free-solid-svg-icons';
+import {useNavigate} from 'react-router-dom'
 import './Sign.css'
 
 function Sign() {
@@ -107,7 +110,17 @@ function Sign() {
     setIsSignUp(!isSignUp);
   };
 
+    const navigate = useNavigate();
+  function goBack() {
+    navigate('/create');
+  }
+
   return (
+    <>
+                 <p onClick={goBack} className='back'>
+        <FontAwesomeIcon icon={faArrowLeft} />
+        Back
+     </p>
     <div className="sign-container">
       <h2>{isSignUp ? 'Create An Account' : 'Login'}</h2>
       {errorMessage && (
@@ -147,6 +160,7 @@ function Sign() {
         {isSignUp ? 'Already have an account?' : 'Create an account'}
       </button>
     </div>
+    </>
   );
 }
 

@@ -62,7 +62,8 @@
     cursor: pointer;
     color: black;
     text-decoration: underline;
-    margin-left: 200px;
+    margin-left: 40px;
+    font-weight: 900;
   }
   
   .sign-container .toggle-button:hover {
@@ -86,6 +87,15 @@
   @keyframes fadeOut {
     from { opacity: 1; }
     to { opacity: 0; display: none; }
+  }
+
+  .back {
+    color: blue;
+    margin-left: 50px;
+    margin-top: 20px;
+    font-size: 13px;
+    cursor: pointer;
+    width: 20px;
   }
   
   

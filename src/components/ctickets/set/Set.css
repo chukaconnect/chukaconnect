@@ -48,8 +48,8 @@
     border-radius: 5px;
   }
   
-  button[type="submit"],
-  button[type="button"] {
+  .centered button[type="submit"],
+  .centered button[type="button"] {
     display: block;
     margin-top: 20px;
     padding: 10px;
@@ -62,8 +62,8 @@
     cursor: pointer;
   }
   
-  button[type="submit"]:hover,
-  button[type="button"]:hover {
+  .centered button[type="submit"]:hover,
+  .centered button[type="button"]:hover {
     background-color: #0069d9;
   }
 
