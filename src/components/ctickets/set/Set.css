@@ -37,9 +37,9 @@
     font-weight: bold;
   }
   
-  input[type="text"],
-  input[type="email"],
-  input[type="password"] {
+  .centered input[type="text"],
+  .centered input[type="email"],
+  .centered input[type="password"] {
     display: block;
     width: 100%;
     padding: 10px;

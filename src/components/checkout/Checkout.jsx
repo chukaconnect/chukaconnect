@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Axios from 'axios';
 import Modal from '../../common/modal/Modal'
+import Header from '../../common/header/Header'
 
 import './style.css'
 
@@ -41,6 +42,8 @@ const register =  (event) => {
 
 
   return (
+    <>
+     <Header CartItem={CartItem} />
     <div className='Register'>
         <h1>Checkout</h1>
         <form >
@@ -60,6 +63,7 @@ const register =  (event) => {
     </div>
         </form>
     </div>
+    </>
   )
 }
 
