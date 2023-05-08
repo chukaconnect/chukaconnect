@@ -1,4 +1,4 @@
-import React, {useEffect,lazy, Suspense} from "react"
+import React, {lazy, Suspense} from "react"
 import {Helmet} from 'react-helmet'
 import Header from "../common/header/Header"
 import Home from "../components/MainPage/Home"
@@ -8,7 +8,7 @@ import Wrapper from "../components/wrapper/Wrapper"
 //import Fashionsub4 from "../components/fashioncat/Fashionsub4"
 //import Drinkssub1 from "../components/drinkscat/Drinkssub1"
 //import Arrivals from "../components/toAdd/Arrivals"
-import LoadingPage from "../common/loadingPage/LoadingPage"
+
 import './pages.css'
 import { useState } from "react"
 
@@ -18,23 +18,8 @@ const Fashionsub4Component = lazy(() => import('../components/fashioncat/Fashion
 const Drinkssub1Component = lazy(() => import('../components/drinkscat/Drinkssub1'));
 
 const Pages = ({ productItems,addToCart,CartItem,drinksItems,fashionItems }) => {
-  const [isLoading,setIsLoading] = useState(true);
-  useEffect(() =>{
-    const appLoaded = localStorage.getItem('appLoaded');
 
-    if(appLoaded){
-      setIsLoading(false)
-    } else{ 
-        setIsLoading(true);
-        localStorage.setItem('appLoaded',true);
-    }
-  },[]);
-
-  if(isLoading){
-    return(
-      <LoadingPage />
-    )
-  }
+  
   return (
     <>
      <Header CartItem={CartItem} productItems={productItems}/>

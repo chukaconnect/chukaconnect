@@ -47,7 +47,7 @@ const navigate = useNavigate()
             <ul>
               <li><FontAwesomeIcon icon={faMapMarkerAlt} /> : Past slaughter house </li>
               <li><FontAwesomeIcon icon={faEnvelope} /> : chukaconnect@gmail.com</li>
-              <li onClick={handleClick}><FontAwesomeIcon icon={faPhone} /> : 0741474318</li>
+              <li onClick={handleClick}><FontAwesomeIcon icon={faPhone} /> : 0115226709</li>
               <li><a href="https://www.instagram.com/chukaconnect/?next=%2F" rel='_blank'><FontAwesomeIcon icon={faInstagram} /> : Instagram</a></li>
             </ul>
           </div>
